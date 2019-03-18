@@ -1,6 +1,8 @@
 FROM ebits/openshift-client:latest
 
 LABEL maintainer=relief.melone@gmail.com
+LABEL description="Based on ebits/openshift-client but changed the KUBECONFIG so the container is able to run on openshift"
+
 ENV KUBECONFIG "/home/rm-os/.kube/config"
 
 # Install OC Client Tools
