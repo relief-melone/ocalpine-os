@@ -5,7 +5,6 @@ LABEL description="Based on ebits/openshift-client but changed the KUBECONFIG so
 
 ENV KUBECONFIG "/home/rm-os/.kube/config"
 
-# Install OC Client Tools
 RUN mkdir /home/rm-os && \
     chgrp root -R /home/rm-os && \
     chmod 770 /home/rm-os
